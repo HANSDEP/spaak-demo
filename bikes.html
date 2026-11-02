@@ -24,58 +24,74 @@
             <a class="cta light" href="store.html">Book a test ride</a>
         </header>
         <main>
-            <span class="eyebrow">Our bikes</span>
-            <h1>Three bikes. One for every ride.</h1>
-            <p class="lead">Every spaak. arrives assembled and adjusted to your height, with a free first check-up in our workshop after a few weeks.</p>
-            <section class="cards" aria-label="Our bikes">
-                <article class="card">
-                    <svg class="bike" style="--frame: #d6bf8f" viewBox="0 0 240 150" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"><circle cx="60" cy="105" r="38" /><circle cx="184" cy="105" r="38" /><path class="f" d="M60 105l54 3-12-56zM102 52h60l4 12-52 44M166 64l18 41M102 52l-4-14M162 52l-6-18 18-4" /><path d="M86 36h24" stroke-width="8" /><circle cx="114" cy="108" r="8" stroke-width="5" /></g></svg>
-                    <span class="eyebrow">City bike</span>
-                    <h3>spaak. Stad</h3>
-                    <p>For short trips through town, in any weather.</p>
-                    <ul class="specs">
-                        <li>7-speed hub gears</li>
-                        <li>Roller brakes and dynamo lights</li>
-                        <li>Rear rack, chain guard and kickstand</li>
-                        <li>17 kg, sizes XS to XL</li>
-                        <li>Cream, black or moss green</li>
-                    </ul>
-                    <span class="price">€899</span>
-                </article>
-                <article class="card">
-                    <svg class="bike" style="--frame: #4f6b4a" viewBox="0 0 240 150" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"><circle cx="60" cy="105" r="38" /><circle cx="184" cy="105" r="38" /><path class="f" d="M60 105l54 3-12-56zM102 52h60l4 12-52 44M166 64l18 41M102 52l-4-14M162 52l-6-18 18-4" /><path d="M86 36h24" stroke-width="8" /><circle cx="114" cy="108" r="8" stroke-width="5" /></g></svg>
-                    <span class="eyebrow">City e-bike</span>
-                    <h3>spaak. Stad E</h3>
-                    <p>The Stad with a quiet push: further, faster, less sweat.</p>
-                    <ul class="specs">
-                        <li>250 W mid-drive motor, assistance up to 25 km/h</li>
-                        <li>500 Wh removable battery, 50 to 120 km</li>
-                        <li>8-speed hub gears, hydraulic disc brakes</li>
-                        <li>24 kg, sizes S to XL</li>
-                        <li>Moss green or graphite</li>
-                    </ul>
-                    <span class="price">€2,499</span>
-                </article>
-                <article class="card">
-                    <svg class="bike" style="--frame: #c79a5b" viewBox="0 0 240 150" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"><circle cx="60" cy="105" r="38" /><circle cx="184" cy="105" r="38" /><path class="f" d="M60 105l54 3-12-56zM102 52h60l4 12-52 44M166 64l18 41M102 52l-4-14M162 52l-6-18 18-4" /><path d="M86 36h24" stroke-width="8" /><circle cx="114" cy="108" r="8" stroke-width="5" /></g></svg>
-                    <span class="eyebrow">Gravel bike</span>
-                    <h3>spaak. Grind</h3>
-                    <p>For weekend rides on roads and unpaved paths.</p>
-                    <ul class="specs">
-                        <li>Aluminium frame, 20 gears</li>
-                        <li>Hydraulic disc brakes</li>
-                        <li>40 mm tyres</li>
-                        <li>9.8 kg, sizes XS to XL</li>
-                        <li>Sand</li>
-                    </ul>
-                    <span class="price">€1,849</span>
-                </article>
+            <section class="pagehead">
+                <div>
+                    <span class="eyebrow">Our bikes</span>
+                    <h1>Three bikes. One for every ride.</h1>
+                    <p class="lead">Every spaak. arrives assembled and adjusted to your height, with a free first check-up in our workshop after a few weeks.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1501147830916-ce44a6359892?w=1200&q=70&auto=format&fit=crop" alt="Someone riding a city bike" />
             </section>
-            <div class="actions">
-                <a class="cta" href="store.html">Try one in our store</a>
-                <a class="cta light" href="size-guide.html">Find your size</a>
+            <div class="models">
+                <article class="model" id="stad">
+                    <img src="https://images.unsplash.com/photo-1588766919876-f2ad05ff92f5?w=1200&q=70&auto=format&fit=crop" alt="A green city bike with a front basket" loading="lazy" />
+                    <div class="card-body">
+                        <span class="kind">City bike</span>
+                        <h2>spaak. Stad</h2>
+                        <p>For short trips through town, in any weather.</p>
+                        <ul class="specs">
+                            <li>7-speed hub gears</li>
+                            <li>Roller brakes and dynamo lights</li>
+                            <li>Rear rack, chain guard and kickstand</li>
+                            <li>17 kg, sizes XS to XL</li>
+                        </ul>
+                        <div class="buy"><span class="price">€899</span><span class="swatches" aria-label="Cream, black or moss green"><i style="background: #e9dcc0"></i><i style="background: #23262b"></i><i style="background: #4f6b4a"></i></span></div>
+                    </div>
+                </article>
+                <article class="model" id="stad-e">
+                    <img src="https://images.unsplash.com/photo-1618987688327-dc0b28888fe4?w=1200&q=70&auto=format&fit=crop" alt="A black e-bike in a bright arcade" loading="lazy" />
+                    <div class="card-body">
+                        <span class="kind">City e-bike</span>
+                        <h2>spaak. Stad E</h2>
+                        <p>The Stad with a quiet push: further, faster, less sweat.</p>
+                        <ul class="specs">
+                            <li>250 W mid-drive motor, assistance up to 25 km/h</li>
+                            <li>500 Wh removable battery, 50 to 120 km</li>
+                            <li>8-speed hub gears, hydraulic disc brakes</li>
+                            <li>24 kg, sizes S to XL</li>
+                        </ul>
+                        <div class="buy"><span class="price">€2,499</span><span class="swatches" aria-label="Moss green or graphite"><i style="background: #4f6b4a"></i><i style="background: #3a3d42"></i></span></div>
+                    </div>
+                </article>
+                <article class="model" id="grind">
+                    <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?w=1200&q=70&auto=format&fit=crop" alt="A gravel bike leaning against a wooden wall" loading="lazy" />
+                    <div class="card-body">
+                        <span class="kind">Gravel bike</span>
+                        <h2>spaak. Grind</h2>
+                        <p>For weekend rides on roads and unpaved paths.</p>
+                        <ul class="specs">
+                            <li>Aluminium frame, 20 gears</li>
+                            <li>Hydraulic disc brakes</li>
+                            <li>40 mm tyres</li>
+                            <li>9.8 kg, sizes XS to XL</li>
+                        </ul>
+                        <div class="buy"><span class="price">€1,849</span><span class="swatches" aria-label="Sand"><i style="background: #c9a46e"></i></span></div>
+                    </div>
+                </article>
             </div>
+            <section class="band" style="margin-top: 56px">
+                <div><h2>Try one first</h2><p>Test rides on every model, no appointment needed.</p></div>
+                <a class="cta light" href="store.html">Visit the store</a>
+            </section>
         </main>
-        <footer>spaak. is a demo bike shop for Neople Chat. Nothing on this site is a real offer.</footer>
+        <footer>
+            <div class="cols">
+                <div><a class="logo" href="./">spaak<span>.</span></a><p>Bikes that fit, from our own workshop in Utrecht.</p></div>
+                <div><strong>Shop</strong><a href="bikes.html">Bikes</a><a href="size-guide.html">Size guide</a></div>
+                <div><strong>Help</strong><a href="delivery-returns.html">Delivery &amp; returns</a><a href="store.html">Service &amp; warranty</a></div>
+                <div><strong>Visit</strong><span>Spaakhof 7, Utrecht</span><span>Tue to Sat from 10:00</span></div>
+            </div>
+            <p class="fine">spaak. is a demo bike shop for Neople Chat. Nothing on this site is a real offer.</p>
+        </footer>
     </body>
 </html>

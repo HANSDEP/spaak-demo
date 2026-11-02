@@ -9,6 +9,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=DM+Sans:wght@400;600;700&display=swap" />
         <link rel="stylesheet" href="site.css" />
+        <style>
+            .measure { display: grid; place-content: center; justify-items: center; gap: 16px; aspect-ratio: 4 / 3; border-radius: 24px; background: var(--sand); padding: 32px; }
+            .measure .bike { --frame: #9aa0a6; max-width: 520px; }
+            .measure p { margin: 0; color: var(--muted); font-size: 14px; }
+            .measure p b { color: var(--red-deep); }
+        </style>
         <script src="site.js" defer></script>
     </head>
     <body>
@@ -24,9 +30,17 @@
             <a class="cta light" href="store.html">Book a test ride</a>
         </header>
         <main>
-            <span class="eyebrow">Size guide</span>
-            <h1>Which frame size fits you?</h1>
-            <p class="lead">All spaak. bikes use the same chart. The frame size is the length of the seat tube, and your height is all you need to choose it.</p>
+            <section class="pagehead">
+                <div>
+                    <span class="eyebrow">Size guide</span>
+                    <h1>Which frame size fits you?</h1>
+                    <p class="lead">All spaak. bikes use the same chart. The frame size is the length of the seat tube, and your height is all you need to choose it.</p>
+                </div>
+                <div class="measure">
+                    <svg class="bike" viewBox="0 0 240 150" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"><circle cx="60" cy="105" r="38" /><circle cx="184" cy="105" r="38" /><path class="f" d="M60 105l54 3-12-56zM102 52h60l4 12-52 44M166 64l18 41M102 52l-4-14M162 52l-6-18 18-4" /><path class="seat" d="M114 108 102 52" stroke-width="9" /><path d="M86 36h24" stroke-width="8" /><circle cx="114" cy="108" r="8" stroke-width="5" /><path d="M128 106 116 50" stroke="#c93c42" stroke-width="1.5" stroke-dasharray="3 3" /></g></svg>
+                    <p>The <b>red tube</b> is the frame size.</p>
+                </div>
+            </section>
             <table>
                 <thead><tr><th>Size</th><th>Frame</th><th>Your height</th></tr></thead>
                 <tbody>
@@ -44,8 +58,19 @@
                 <div class="fact"><strong>Wrong size after all?</strong>Exchange it within 30 days for free. Our courier swaps it in one visit.</div>
                 <div class="fact"><strong>Under 155 or over 197 cm?</strong>Come by for a fitting and we'll tell you honestly what fits.</div>
             </div>
-            <a class="cta" href="bikes.html">See our bikes</a>
+            <section class="band">
+                <div><h2>Found your size?</h2><p>Every bike comes in it, delivered and adjusted to you.</p></div>
+                <a class="cta light" href="bikes.html">See our bikes</a>
+            </section>
         </main>
-        <footer>spaak. is a demo bike shop for Neople Chat. Nothing on this site is a real offer.</footer>
+        <footer>
+            <div class="cols">
+                <div><a class="logo" href="./">spaak<span>.</span></a><p>Bikes that fit, from our own workshop in Utrecht.</p></div>
+                <div><strong>Shop</strong><a href="bikes.html">Bikes</a><a href="size-guide.html">Size guide</a></div>
+                <div><strong>Help</strong><a href="delivery-returns.html">Delivery &amp; returns</a><a href="store.html">Service &amp; warranty</a></div>
+                <div><strong>Visit</strong><span>Spaakhof 7, Utrecht</span><span>Tue to Sat from 10:00</span></div>
+            </div>
+            <p class="fine">spaak. is a demo bike shop for Neople Chat. Nothing on this site is a real offer.</p>
+        </footer>
     </body>
 </html>

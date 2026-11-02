@@ -24,29 +24,49 @@
             <a class="cta light" href="store.html">Book a test ride</a>
         </header>
         <main>
-            <span class="eyebrow">Delivery &amp; returns</span>
-            <h1>Delivered ready to ride. Returned without fuss.</h1>
+            <section class="pagehead">
+                <div>
+                    <span class="eyebrow">Delivery &amp; returns</span>
+                    <h1>Delivered ready to ride. Returned without fuss.</h1>
+                    <p class="lead">Our own courier brings your bike to the door, and you have 30 days to change your mind.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1605315188787-e3c8f6bf927a?w=1200&q=70&auto=format&fit=crop" alt="A city bike parked by a canal" />
+            </section>
             <div class="facts">
                 <div class="fact"><strong>Bikes</strong>Our own bike courier brings your bike assembled and adjusted, free in the Netherlands and Belgium, within 3 to 7 working days. Two working days before, you get a 4-hour window by email.</div>
                 <div class="fact"><strong>Accessories</strong>By PostNL, free from €50, otherwise €4.95. Ordered on a working day before 17:00, usually delivered the next working day.</div>
                 <div class="fact"><strong>Returns</strong>30 days, no reason needed. Accessories unused and in their packaging, bikes undamaged and ridden less than 50 km.</div>
                 <div class="fact"><strong>Refunds</strong>Within 5 working days after we have received and checked your return, to your original payment method.</div>
             </div>
-            <h2>Send back an accessory</h2>
-            <ol class="steps">
-                <li>Fill in your order number and email address below.</li>
-                <li>You get a free PostNL return label by email.</li>
-                <li>Drop the parcel off at any PostNL point.</li>
-            </ol>
-            <form class="form" onsubmit="event.preventDefault(); this.querySelector('output').hidden = false">
-                <label>Order number <input name="order" placeholder="SPK-20388" required /></label>
-                <label>Email address <input name="email" type="email" required /></label>
-                <button class="cta" type="submit">Request return label</button>
-                <output hidden>This is a demo shop, so no label is sent.</output>
-            </form>
-            <h2>Send back or exchange a bike</h2>
-            <p class="lead">Bring it to our store for free, or our courier collects it for €49. Another frame size or colour instead? The exchange is free, and the courier swaps it in one visit.</p>
+            <section class="split">
+                <div>
+                    <h2>Send back an accessory</h2>
+                    <ol class="steps">
+                        <li>Fill in your order number and email address.</li>
+                        <li>You get a free PostNL return label by email.</li>
+                        <li>Drop the parcel off at any PostNL point.</li>
+                    </ol>
+                </div>
+                <form class="form" onsubmit="event.preventDefault(); this.querySelector('output').hidden = false">
+                    <label>Order number <input name="order" placeholder="SPK-20388" required /></label>
+                    <label>Email address <input name="email" type="email" required /></label>
+                    <button class="cta" type="submit">Request return label</button>
+                    <output hidden>This is a demo shop, so no label is sent.</output>
+                </form>
+            </section>
+            <section class="band">
+                <div><h2>Send back or exchange a bike</h2><p>Bring it to our store for free, or our courier collects it for €49. Another frame size or colour is a free swap in one visit.</p></div>
+                <a class="cta light" href="store.html">Visit the store</a>
+            </section>
         </main>
-        <footer>spaak. is a demo bike shop for Neople Chat. Nothing on this site is a real offer.</footer>
+        <footer>
+            <div class="cols">
+                <div><a class="logo" href="./">spaak<span>.</span></a><p>Bikes that fit, from our own workshop in Utrecht.</p></div>
+                <div><strong>Shop</strong><a href="bikes.html">Bikes</a><a href="size-guide.html">Size guide</a></div>
+                <div><strong>Help</strong><a href="delivery-returns.html">Delivery &amp; returns</a><a href="store.html">Service &amp; warranty</a></div>
+                <div><strong>Visit</strong><span>Spaakhof 7, Utrecht</span><span>Tue to Sat from 10:00</span></div>
+            </div>
+            <p class="fine">spaak. is a demo bike shop for Neople Chat. Nothing on this site is a real offer.</p>
+        </footer>
     </body>
 </html>
