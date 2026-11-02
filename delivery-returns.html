@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="robots" content="noindex" />
+        <title>Delivery &amp; returns · spaak.</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=DM+Sans:wght@400;600;700&display=swap" />
+        <link rel="stylesheet" href="site.css" />
+        <script src="site.js" defer></script>
+    </head>
+    <body>
+        <div class="banner">Free delivery by our own bike courier, assembled and adjusted to your height.</div>
+        <header>
+            <a class="logo" href="./">spaak<span>.</span></a>
+            <nav aria-label="Shop">
+                <a href="bikes.html">Bikes</a>
+                <a href="size-guide.html">Size guide</a>
+                <a href="store.html">Store &amp; workshop</a>
+                <a href="delivery-returns.html" aria-current="page">Delivery &amp; returns</a>
+            </nav>
+            <a class="cta light" href="store.html">Book a test ride</a>
+        </header>
+        <main>
+            <span class="eyebrow">Delivery &amp; returns</span>
+            <h1>Delivered ready to ride. Returned without fuss.</h1>
+            <div class="facts">
+                <div class="fact"><strong>Bikes</strong>Our own bike courier brings your bike assembled and adjusted, free in the Netherlands and Belgium, within 3 to 7 working days. Two working days before, you get a 4-hour window by email.</div>
+                <div class="fact"><strong>Accessories</strong>By PostNL, free from €50, otherwise €4.95. Ordered on a working day before 17:00, usually delivered the next working day.</div>
+                <div class="fact"><strong>Returns</strong>30 days, no reason needed. Accessories unused and in their packaging, bikes undamaged and ridden less than 50 km.</div>
+                <div class="fact"><strong>Refunds</strong>Within 5 working days after we have received and checked your return, to your original payment method.</div>
+            </div>
+            <h2>Send back an accessory</h2>
+            <ol class="steps">
+                <li>Fill in your order number and email address below.</li>
+                <li>You get a free PostNL return label by email.</li>
+                <li>Drop the parcel off at any PostNL point.</li>
+            </ol>
+            <form class="form" onsubmit="event.preventDefault(); this.querySelector('output').hidden = false">
+                <label>Order number <input name="order" placeholder="SPK-20388" required /></label>
+                <label>Email address <input name="email" type="email" required /></label>
+                <button class="cta" type="submit">Request return label</button>
+                <output hidden>This is a demo shop, so no label is sent.</output>
+            </form>
+            <h2>Send back or exchange a bike</h2>
+            <p class="lead">Bring it to our store for free, or our courier collects it for €49. Another frame size or colour instead? The exchange is free, and the courier swaps it in one visit.</p>
+        </main>
+        <footer>spaak. is a demo bike shop for Neople Chat. Nothing on this site is a real offer.</footer>
+    </body>
+</html>
