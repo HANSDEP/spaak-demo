@@ -110,7 +110,7 @@ footer { background: var(--ink); color: #c9c4bb; }
 footer .cols { display: grid; grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr)); gap: 32px; max-width: 1200px; margin: 0 auto; padding: 56px 20px 28px; }
 footer .logo { color: #fff; }
 footer strong { display: block; margin-bottom: 10px; color: #fff; font-size: 14px; }
-footer .cols a, footer .cols span { display: block; margin: 6px 0; color: #c9c4bb; text-decoration: none; font-size: 14px; }
+footer .cols > div > a, footer .cols > div > span { display: block; margin: 6px 0; color: #c9c4bb; text-decoration: none; font-size: 14px; }
 footer .cols a:hover { color: #fff; }
 footer .cols a.logo { margin: 0 0 10px; color: #fff; font: 800 28px/1 var(--display); }
 footer .fine { max-width: 1200px; margin: 0 auto; padding: 18px 20px 28px; border-top: 1px solid rgba(255,255,255,.1); font-size: 13px; color: #8f8a82; }
